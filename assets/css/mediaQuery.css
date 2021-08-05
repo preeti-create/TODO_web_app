@@ -1,0 +1,87 @@
+
+@media screen and (max-width : 920px){
+    
+    /****************************************************button*********************************************/
+        
+        
+        #addTask{
+            font-size: 1.3rem;
+        }
+        
+        #delTask{
+            font-size: 1.3rem;  
+        }
+        
+        #selectAll{
+            font-size: 1.3rem;  
+        }
+    }
+    
+    @media screen and (max-width : 600px){
+        #Container{
+            
+            width: 80%;
+        }
+    }
+    
+    @media screen and (max-width : 530px){
+        #Container{
+            
+            width: 90%;
+        }
+    }
+    
+    @media screen and (max-width : 470px){
+        
+        
+        .heading {
+            font-size: 2rem;
+        } 
+        /****************************************************description*********************************************/
+       
+        
+        #description h2{
+            font-size: 1rem;
+        }
+        
+        #description input:placeholder-shown{
+            font-size: 1.1rem;
+            letter-spacing: 0rem;
+        }
+    
+        /****************************************************category*********************************************/
+        
+        #category h2{
+            font-size: 1.1rem;
+        }
+        
+        #select-category{
+            font-size: 1.1rem;
+        }
+        
+        /****************************************************deadline*********************************************/
+    
+        #deadline h2{
+            font-size: 1.1rem;
+        }
+        
+        #deadline input{
+            font-size: 1rem;
+        }
+        
+        /****************************************************button*********************************************/
+        
+        
+        #addTask{
+            font-size: 1.1rem;
+        }
+        
+        #delTask{
+            font-size: 1.1rem;  
+        }
+    
+        #selectAll{
+            font-size: 1.1rem;  
+        }
+        
+    }

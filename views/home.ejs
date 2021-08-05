@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/mediaQuery.css">
+</head>
+<body>
+    <div id="Container">
+            <h1 class="heading"> MY TODO'S</h1>
+        <div id="Container-section1">
+        <form action="/action/add" method="POST">
+            <div id="description">
+                <h2>Description</h2>
+                <input type="text" name="description" placeholder="What do you need to do?" required>
+            </div>
+
+            <div id="categoryAndDueDate">
+
+                <div id="category">
+                    <h2>category</h2>
+                    <select name="category" id="select-category"  required>
+                        <option value="" >
+                            Choose a category
+                        </option>
+                        <option value="Personal" id="Personal" required>
+                            Personal
+                        </option>
+                        <option value="Work" id="Work" required>
+                            Work
+                        </option>
+                        <option value="School" id="school" required id="school">
+                            School
+                        </option>
+                        <option value="Other" id="other" required >
+                            Other
+                        </option>
+                    </select>
+                </div>
+                <div id="deadline">
+                    <h2>due date</h2>
+                    <input type="date" name="deadline" required>
+                </div>
+
+            </div>
+           
+        </div>  
+        <!-- add task button -->
+            <div >
+                <button type="submit" name="add task" id="addTask" class="btn">   add task</button>
+            </form>
+            </div>
+        <!-- delete and select all button -->
+        <div class="delete-btn">
+            <button type="" id="selectAll" class="btn"> select all</button>
+       
+            <form action="/action/delete" method="POST">
+                    <button type="" name="add task" id="delTask" class="btn">   delete task</button>
+        </div>
+                    <div id="Container-section2"> 
+                    <!-- loop to add todo -->
+                        <% for ( i of todo_list ) { %>
+                            <div id="todo-div">
+                                <input type="checkbox" id="checkbox" name="selectedTodos" class="check"  value="<%= i._id %>">
+                            <label for="checkbox" id=""> 
+                                <h1 class="task-description"> <%= i.description %></h1>
+                                <div class="deadline-category"> 
+                                    <h1 class="task-deadline" ><%= i.deadline %></h1>
+                                    <h1 class="task-category" ><%= i.category %></h1>        
+                                </div>
+                            </label>
+                            </div>
+                    <% } %>
+
+                    </div>
+                </form>   
+         </div> 
+    <script src="/js/home.js"></script>
+</body>
+</html>
+
+

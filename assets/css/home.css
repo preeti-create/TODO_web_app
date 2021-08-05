@@ -1,0 +1,215 @@
+*{
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(148, 145, 145);
+}
+
+#Container{
+    /* border: 2px solid black; */
+    width: 70%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+}
+
+.heading {
+    text-align: center;
+    padding: 2%;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    letter-spacing: .2rem;
+    color: rgb(139, 138, 138);
+    border-bottom: 1px solid lightgray;
+} 
+/****************************************************description*********************************************/
+#description {  
+    padding: 2%;
+    border-bottom: 1px solid lightgray;
+}
+
+#description h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgb(73, 72, 72);
+}
+
+#description input{
+    border: none;
+}
+
+#description input:focus{
+    outline: none;
+}
+
+#description input:placeholder-shown{
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+}
+/****************************************************categoryAndDueDate*********************************************/
+
+#categoryAndDueDate{
+    border-bottom: 1px solid lightgray;
+}
+
+/****************************************************category*********************************************/
+
+#category{
+    display: inline-block;
+    /* border: 2px dotted orange; */
+    width: 45%;
+    padding: 2%;
+    border-right:   1px solid lightgray;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgb(73, 72, 72);
+}
+
+#category h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgb(73, 72, 72);
+}
+
+#select-category{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: rgb(182, 175, 175);
+    cursor: pointer;
+}
+
+#select-category:focus{
+    outline: none;
+}
+
+
+/****************************************************deadline*********************************************/
+
+#deadline{
+    display: inline-block;
+    /* border: 2px dotted orange; */
+    width: 45%;
+    padding: 2%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgb(73, 72, 72);
+}
+
+#deadline h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: rgb(73, 72, 72);
+}
+
+#deadline input{
+    border: none;
+    font-size: 1.5rem;
+    color: rgb(182, 175, 175);
+    cursor: pointer;
+}
+
+#deadline input:focus{
+    outline: none;
+}
+
+/****************************************************button*********************************************/
+
+
+.btn{
+    height: 50px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    display: block;
+    margin-left: 40%;
+    /* border: 2px solid orange    */
+}
+
+#addTask{
+    background-color: rgb(56, 52, 52);
+    margin-top: 2%;
+}
+
+.delete-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-around; */
+    padding: 2%;
+    border-bottom: 1px solid lightgray;
+}
+
+#delTask{
+    background-color: orangered; 
+    text-decoration: none;
+    display: inline-block;
+    width: 115%;
+    /* margin-left: 190%; */
+}
+
+
+#selectAll{
+    margin-right: 15%;
+    background-color: rgb(83, 3, 3);
+    border: none;
+}
+
+#delTask:focus{
+    outline: none;
+}
+
+#selectAll:focus{
+    outline: none;
+}
+
+/********************************************Container-section2********************************************/
+#Container-section2{
+    /* border: 2px solid black; */
+}
+
+#todo-div{
+    /* border: 2px solid black; */
+    padding: 2%;
+    border-bottom: 1px solid lightgray;
+}
+
+.task-category{ 
+    width: 30%;
+    color: white;
+    background-color: rgb(165, 165, 34);
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+} 
+
+
+.task-description{
+    display: inline-block;
+    margin-left: 2%; 
+    margin-top: 1%;
+    color: rgb(70, 66, 66);
+}
+
+.deadline-category{
+    display: flex;
+    justify-content: space-between;
+}
+.task-deadline{
+   font-size: .8rem;
+   margin-top: 1%;
+   color: rgb(116, 112, 112);
+}
+
